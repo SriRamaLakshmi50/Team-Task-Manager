@@ -15,7 +15,7 @@ function App() {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/login",
+        "https://team-task-manager-production-23b4.up.railway.app/login",
         {
           email,
           password,
@@ -32,12 +32,13 @@ function App() {
   const handleSignup = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/signup",
-        {
-          email,
-          password,
-        }
-      );
+  "https://team-task-manager-production-23b4.up.railway.app/signup",
+  {
+    email,
+    password,
+  }
+);
+      
 
       alert(res.data.message);
     } catch (error) {
